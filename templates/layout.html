@@ -7,6 +7,7 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../static/css/style.css">
         <title>Robbers of Catan</title>
     </head>
@@ -14,30 +15,50 @@
     <body>
 
         <header>
-            <a href="{{url_for('index')}}"><h1>Robbers of Catan</h1></a>
+            <a href="{{url_for('index')}}">
+                <h1>Robbers of Catan</h1>
+            </a>
             <div class="dropdown">
-                <a href="{{url_for('contact')}}"><button id="contact-header-button" class="solo-header-button">Contact</button></a>
+                <a href="{{url_for('profile')}}">
+                    <button id="register-nav-link" class="solo-header-button">Profile</button>
+                </a>
             </div>
             <div class="dropdown">
-                <a href="{{url_for('about')}}"><button id="about-header-button" class="dropbtn">About</button></a>
-                <div class="dropdown-content">
-                    <a href="{{url_for('producers')}}">Producers</a>
-                    <a href="{{url_for('hosts')}}">Hosts</a>
-                    <a href="{{url_for('editors')}}">Editors</a>
-                    <a href="{{url_for('marketers')}}">Marketers</a>
-                    <a href="{{url_for('developers')}}">Developers</a>
-                    <a class="dropdown-content-last" href="{{url_for('artists')}}">Artists</a>
-                </div>
+                <a href="{{url_for('players')}}">
+                    <button id="players-nav-link" class="solo-header-button">Players</button>
+                </a>
             </div>
             <div class="dropdown">
-                <a href="{{url_for('podcasts')}}"><button id="podcasts-header-button" class="dropbtn">Podcasts</button></a>
-                <div class="dropdown-content">
-                    <a class="dropdown-content-last" href="{{url_for('the_break')}}">The Break</a>
-                </div>
+                <a href="{{url_for('seasons')}}">
+                    <button id="seasons-nav-link" class="solo-header-button">Seasons</button>
+                </a>
+            </div>
+            <div class="dropdown">
+                <a href="{{url_for('records')}}">
+                    <button id="records-nav-link" class="solo-header-button">Records</button>
+                </a>
+            </div>
+            <div class="dropdown">
+                <a href="{{url_for('about')}}">
+                    <button id="about-nav-link" class="solo-header-button">About</button>
+                </a>
+            </div>
+            <div class="dropdown">
+                <a href="{{url_for('news')}}">
+                    <button id="news-nav-link" class="solo-header-button">News</button>
+                </a>
             </div>
         </header>
+        <p style="color: black; position: relative; left: 2%; position: fixed; z-index: 1;">presented by Sonder Media</p>
 
-        <h1></h1>
+        <div class="body-container">
+            {% block content %} {% endblock %}
+
+        </div>
+
+         <footer>
+             <br><h6>&copy Sonder Media 2020</h6>
+        </footer>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

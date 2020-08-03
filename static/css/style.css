@@ -1,7 +1,16 @@
+/*
+blue: #4285F4
+red: #DB4437
+green: #0F9D58
+yellow: #F4B400
+orange: #FF8C00
+purple: #9B30FF
+*/
+
 /* default settings */
 
 body {
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Dosis', sans-serif;
     background: whitesmoke;
 }
 
@@ -9,10 +18,11 @@ body {
 /* header section */
 
 header {
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Dosis', sans-serif;
     width: 100%;
     height: 56px;
     background: black;
+     /* background-image: linear-gradient(to right, whitesmoke, whitesmoke, black, black, black, black); */
     color: white;
     padding: 0% 2%;
     border-radius: 0px 0px 25px 25px;
@@ -25,23 +35,23 @@ header h1 {
     float: left;
     height: 56px;
     margin: 0px;
-    color: white;
+    color: black;
+    font-weight: 800;
 }
 
 .solo-header-button {
     height: 56px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Dosis', sans-serif;
     min-width: 100px;
     background-color: black;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
-    border-radius: 25px;
 }
 
 .solo-header-button:hover {
-    background-color: #ddd;
+    background-image: whitesmoke;
     color: black;
 }
 
@@ -50,7 +60,7 @@ header h1 {
 
 .dropbtn {
     height: 56px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Dosis', sans-serif;
     min-width: 100px;
     background-color: black;
     color: white;
@@ -86,7 +96,7 @@ header h1 {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: whitesmoke;
 }
 
 .dropdown:hover .dropdown-content {
@@ -103,7 +113,7 @@ header h1 {
 }
 
 .body-container {
-    padding: 1%;
+    margin: 2% 5%;
 }
 
 .card {
@@ -126,11 +136,34 @@ header h1 {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* not being applied to buttons
+.btn-black {
+    background-image: linear-gradient(to bottom right, black, white, white, black);
+    color: black;
+    width: 100%;
+    border: black
+    1px solid;
+    border-radius: 10px;
+}
+
+.btn-black:hover {
+    background-image: linear-gradient(to top right, black, white, white, black);
+}
+*/
+
 footer{
     display: table;
     text-align: center;
+    width: 100%;
+    background: black;
+    /* background-image: linear-gradient(to right, black, black, whitesmoke, whitesmoke, black, black); */
+    color: black;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 25px 25px 0px 0px;
+    position: relative;
+    bottom: 0px;
+    position: fixed;
 }
 
 h2 {
@@ -140,4 +173,8 @@ h2 {
 
 .card {
     border-radius: 10px;
+}
+
+h3 {
+    font-weight: 600;
 }

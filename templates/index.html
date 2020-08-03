@@ -1,1 +1,137 @@
-{% extends "layout.html" %}
+{% extends 'layout.html' %}
+{% block content %}
+
+<div class="row">
+
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <h3 style="text-align: center; font-weight: 600;">Recent News</h3>
+                <br>
+                <h4 style="font-weight: 500;"><a href="{{url_for('news')}}">Article Title</a></h4>
+                <h5 style="font-weight: 400;"><a href="{{url_for('news')}}">Author Full Name</a></h5>
+                <h6 style="font-weight: 300;">Article Date</h6>
+                <p style="font-weight: 200;">Article first sentences Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <br>
+                <h4 style="font-weight: 500;"><a href="{{url_for('news')}}">Article Title</a></h4>
+                <h5 style="font-weight: 400;"><a href="{{url_for('news')}}">Author Full Name</a></h5>
+                <h6 style="font-weight: 300;">Article Date</h6>
+                <p style="font-weight: 200;">Article first sentences Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <br>
+                <h4 style="font-weight: 500;"><a href="{{url_for('news')}}">Article Title</a></h4>
+                <h5 style="font-weight: 400;"><a href="{{url_for('news')}}">Author Full Name</a></h5>
+                <h6 style="font-weight: 300;">Article Date</h6>
+                <p style="font-weight: 200;">Article first sentences Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <br>
+                <h4 style="font-weight: 500;"><a href="{{url_for('news')}}">Article Title</a></h4>
+                <h5 style="font-weight: 400;"><a href="{{url_for('news')}}">Author Full Name</a></h5>
+                <h6 style="font-weight: 300;">Article Date</h6>
+                <p style="font-weight: 200;">Article first sentences Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6">
+                        <img style="max-width: 100%; border-radius: 10px;" src="../static/img/logo/logo-placeholder.jpg">
+                    </div>
+                    <div class="col-6">
+                        <a href="https://colonist.io/"><img style="max-width: 100%; border-radius: 10px;" src="../static/img/images/colonist.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="card">
+            <div class="card-body">
+                <h2 style="text-align: center; font-weight: 600;">Welcome to Robbers of Catan!</h2>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="card">
+            <div class="card-body">
+                <h3 style="font-weight: 400;">Welcome to our Settlers of Catan League! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    </div>
+    <div class="col-3">
+
+        <div class="card">
+            <div class="card-body">
+                <h3 style="text-align: center; font-weight: 600;">Explore our website!</h3>
+                <br>
+                <a href="{{url_for('news')}}" class="btn"
+                   style="background-image: linear-gradient(to bottom right, white, black, black, white);
+                   color: white; width: 100%; border: black 1px solid;
+                   border-radius: 10px;"><h5>News</h5>
+                </a><br><br>
+                <a href="{{url_for('about')}}" class="btn"
+                   style="background-image: linear-gradient(to bottom right, black, white, white, black);
+                   color: black; width: 100%; border: black 1px solid;
+                   border-radius: 10px;"><h5>About</h5>
+                </a><br><br>
+                <a href="{{url_for('records')}}" class="btn"
+                   style="background-image: linear-gradient(to bottom right, white, black, black, white);
+                   color: white; width: 100%; border: black 1px solid;
+                   border-radius: 10px;"><h5>Records</h5>
+                </a><br><br>
+                <a href="{{url_for('seasons')}}" class="btn"
+                   style="background-image: linear-gradient(to bottom right, black, white, white, black);
+                   color: black; width: 100%; border: black 1px solid;
+                   border-radius: 10px;"><h5>Seasons</h5>
+                </a><br><br>
+                <a href="{{url_for('players')}}" class="btn"
+                   style="background-image: linear-gradient(to bottom right, white, black, black, white);
+                   color: white; width: 100%; border: black 1px solid;
+                   border-radius: 10px;"><h5>Players</h5>
+                </a><br><br>
+                <a href="{{url_for('register')}}" class="btn"
+                   style="background-image: linear-gradient(to bottom right, black, white, white, black);
+                   color: black; width: 100%; border: black 1px solid;
+                   border-radius: 10px;"><h5>Register</h5>
+                </a>
+            </div>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="card">
+            <div class="card-body">
+                <h3 style="text-align: center; font-weight: 600;">Find us here!</h3>
+                <br>
+                <a href="{{url_for('records')}}" class="btn"
+                   style="background-image: linear-gradient(to top right, white, black, black, white);
+                   color: white; width: 100%; border: black 1px solid;
+                   border-radius: 10px;"><h5>Twitch</h5>
+                </a><br><br>
+                <a href="https://discord.gg/RBnFyu" class="btn"
+                   style="background-image: linear-gradient(to top right, black, white, white, black);
+                   color: black; width: 100%; border: black 1px solid;
+                   border-radius: 10px;"><h5>Discord</h5>
+                </a><br><br>
+                <a href="{{url_for('players')}}" class="btn"
+                   style="background-image: linear-gradient(to top right, white, black, black, white);
+                   color: white; width: 100%; border: black 1px solid;
+                   border-radius: 10px;"><h5>YouTube</h5>
+                </a><br><br>
+                <a href="{{url_for('register')}}" class="btn"
+                    style="background-image: linear-gradient(to top right, black, white, white, black);
+                    color: black; width: 100%; border: black 1px solid;
+                    border-radius: 10px;"><h5>Facebook</h5>
+                </a>
+            </div>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
