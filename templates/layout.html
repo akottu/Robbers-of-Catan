@@ -17,7 +17,7 @@
 
         <header>
             <a href="{{url_for('index')}}">
-                <h1 style="color: white;">Robbers of Catan</h1>
+                <h1>Robbers of Catan</h1>
             </a>
             <div class="dropdown">
                 <a href="{{url_for('profile')}}">
@@ -50,12 +50,9 @@
                 </a>
             </div>
         </header>
-        <p style="color: black; position: relative; left: 2%; position: fixed; z-index: 1;">presented by Sonder Media</p>
+        <p id="sonderMedia">presented by Sonder Media</p>
         <a href="https://colonist.io/">
-            <img
-                style="position: relative; right: 2%; position: fixed; z-index: 1;
-                float: right; max-width: 150px; border-radius: 10px;"
-                src="../static/img/images/colonist.png">
+            <img class="colonistLogo" src="../static/img/images/colonist.png">
         </a>
 
         <div class="body-container">
@@ -64,7 +61,7 @@
         </div>
 
          <footer>
-             <br><h6 style="color: white;">&copy Sonder Media 2020</h6>
+             <h6 id="copyright">&copy Sonder Media 2020</h6>
         </footer>
 
         <!-- Optional JavaScript -->
