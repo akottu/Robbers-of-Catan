@@ -10,8 +10,8 @@ purple: #9B30FF
 /* default settings */
 
 body {
-    /* font-family: 'Dosis', sans-serif; */
-    font-family: 'Cardo', serif;
+    /* font-family: 'Cardo', serif; */
+    font-family: 'Dosis', sans-serif;
     background: whitesmoke;
 }
 
@@ -19,8 +19,8 @@ body {
 /* header section */
 
 header {
-    /* font-family: 'Dosis', sans-serif; */
-    font-family: 'Cardo', serif;
+    /* font-family: 'Cardo', serif; */
+    font-family: 'Dosis', sans-serif;
     width: 100%;
     height: 56px;
     background-image: linear-gradient(to right, black, black, black, black, black, black);
@@ -42,8 +42,8 @@ header h1 {
 
 .solo-header-button {
     height: 56px;
-    /* font-family: 'Dosis', sans-serif; */
-    font-family: 'Cardo', serif;
+    /* font-family: 'Cardo', serif; */
+    font-family: 'Dosis', sans-serif;
     min-width: 100px;
     background-color: black;
     color: white;
@@ -62,8 +62,8 @@ header h1 {
 
 .dropbtn {
     height: 56px;
-    /* font-family: 'Dosis', sans-serif; */
-    font-family: 'Cardo', serif;
+    /* font-family: 'Cardo', serif; */
+    font-family: 'Dosis', sans-serif;
     min-width: 100px;
     background-color: black;
     color: white;
@@ -120,6 +120,7 @@ header h1 {
 }
 
 .card {
+    margin-bottom: 10px;
     width: 100%;
     background: white;
     float: right;
