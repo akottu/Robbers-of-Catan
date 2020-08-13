@@ -256,3 +256,23 @@ p{
 .col-12{
     text-align: center;
 }
+
+button{
+    margin: 10px;
+}
+
+.floatRight{
+    float: right;
+    margin: 20px;
+    display: inline;
+}
+
+.floatLeft{
+    float: left;
+    margin: 20px;
+    display: inline;
+}
+
+.center{
+    text-align: center;
+}
